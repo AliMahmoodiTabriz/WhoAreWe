@@ -1,12 +1,11 @@
-﻿
-using Core.Utilities.Results;
+﻿using Core.Utilities.Results;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 
 namespace ConnectionBusiness.Abstract
 {
-    public interface ConnectionService
+    public interface IClientService
     {
         IDataResult<List<Client>> Get();
         IDataResult<Client> GetById(Guid id);
